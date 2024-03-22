@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kors Borg generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <div id="form-container" class="container bar">
+        <div class="row">
+            <div class="col" id="select-column">
+                <select name="kategoria" id="kategoria" class="input form-select">
+                    <option value="commonerNames">Imiona czeladzi</option>
+                    <option value="crusaderNames">Imiona krzyżowców</option>
+                    <option value="WHFMaleHumanNames">Imiona męskie - Warhammer Fantasy</option>
+                    <option value="looks">Wygląd</option>
+                    <option value="maleRussianNames">Imiona rosyjskie - męskie (transl. ang.)</option>
+                    <option value="maleSlavicNames">Imiona słowiańskie - męskie</option>
+
+                    <option value="medievalProfessions">Profesja średniowieczna</option>
+                    <option value="follower">Przyboczny</option>
+                    <option value="looks">Wygląd</option>
+
+
+
+                </select>
+            </div>
+            <div class="col">
+                <input type=number id="liczba" value="20" min="1" class="input form-control">
+
+            </div>
+            <div class="col">
+                <button id='generate-button' class="input btn btn-dark">Generuj</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <tbody id="name-display"></tbody>
+        </table>
+    </div>
+
+    <div class="container footer-container mt-auto">
+        <footer class = "invisible">
+            <p>This generator is an independent production by <a href="http://linktr.ee/hrexandro">Hrexandro</a> and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License.</p>
+            <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
+          </footer>
+          <footer>
+            <p><strong><a href="https://korbaczrpg.blogspot.com/">Korbacz Bobołaka - korbaczrpg.blogspot.com</a>. <a href="https://twitter.com/hrexandro">@hrexandro</a></strong></p>
+          </footer>
+    </div>
+
+
+    <script src='script.js' type="module"></script>
+</body>
+
+
+</html>
